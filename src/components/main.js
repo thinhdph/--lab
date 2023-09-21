@@ -1,10 +1,16 @@
 import React from 'react';
-import { Filmlist } from './object/Filmlist';
+import { Filmlist, RecommendFilm } from './object/Filmlist';
 import Content from './content';
+import Recommend from './recommend';
 
 
 export default function Main() {
   return (
-    <Content films={Filmlist}/> 
+    <>
+    <Recommend film={RecommendFilm}/>
+    <Content films={Filmlist}/>;
+     
+    </>
+    
   )
 }
