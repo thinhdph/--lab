@@ -5,5 +5,5 @@ export  default class Footer extends Component{
         return (
           <div className='footer'>Copy right @ 2022</div>
         )
-      }
-}
+        }
+};
