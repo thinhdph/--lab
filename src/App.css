@@ -1,0 +1,87 @@
+/* header */
+.header {
+ 
+  background-color: rgb(41, 54, 54);
+   margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  list-style: none;
+
+}
+
+li {
+  color: aliceblue;
+  height: 100%;
+  width: 90px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+ul :hover {
+  background-color: rgb(153, 153, 7);
+  color: white;
+}
+.logo
+{
+  max-width:100%;
+  max-height: 100%;
+}
+
+/* ContentDemo */
+.card {
+  margin: 0 10px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+ background-color: black;
+  color: aliceblue;
+}
+button:hover{
+  background-color: rgb(48, 47, 46);
+}
+
+.column {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-content {
+  max-width: 450px;
+  max-height: 600px;
+}
+
+/* FooterDemo */
+.footer {
+  background-color: rgb(204, 204, 68);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  margin-bottom: -100px;
+} 
