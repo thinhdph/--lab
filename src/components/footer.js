@@ -6,4 +6,4 @@ export  default class Footer extends Component{
           <div className='footer'>Copy right @ 2022</div>
         )
         }
-};
+}
