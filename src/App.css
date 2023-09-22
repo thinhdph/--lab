@@ -48,7 +48,7 @@ a {
 }
 
 /* ContentDemo */
-/* .card {
+.card {
   margin: 0 10px;
   text-align: center;
 }
@@ -80,7 +80,7 @@ button:hover{
 .img-content {
   max-width: 450px;
   max-height: 600px;
-} */
+}
 
 /* FooterDemo */
 .footer {
