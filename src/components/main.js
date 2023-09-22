@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <>
     <Recommend film={RecommendFilm}/>
-    <Content films={Filmlist}/>;
+    <Content films={Filmlist}/>
      
     </>
     
