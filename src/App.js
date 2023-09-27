@@ -10,7 +10,6 @@ function App() {
     <Main/>
     <Footer/>
     </>
-  );
+  )
 }
-
 export default App;

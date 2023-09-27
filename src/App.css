@@ -21,7 +21,7 @@ nav{
 }
 
 li {
-  color: aliceblue;
+  /* color: aliceblue; */
   height: 100%;
   width: 90px;
   justify-content: center;
@@ -30,7 +30,7 @@ li {
 }
 
 a {
-  color: aliceblue;
+  /* color: aliceblue; */
   text-decoration: none;
 }
 
@@ -47,8 +47,6 @@ a {
 }
 .search-bar {
   max-width: auto;
-  /* max-height: 50%;
-  display: flex; */
   justify-content: center;
   border: none;
 }
