@@ -8,12 +8,12 @@ export default function Header() {
   return (
     <div>
       <nav style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
-        <ul className='header-menu' style={{color: theme.color}}>
+        <ul className='header-menu' >
           <img className='logo' src='https://cc-prod.scene7.com/is/image/CCProdAuthor/mascot-logo-design_P1_900x420?$pjpeg$&jpegSize=200&wid=900' alt='app xem phim' />
-          <li className='home' style={{color: theme.color}}> <a className='active' href='#home'>Home </a> </li>
-          <li className='new'> <a href='#new'> New</a></li>
-          <li className='about'> <a href='#about'> About</a></li>
-          <li className='contact'> <a href='#contact'> Contact</a></li>
+          <li className='home'> <a  style={{color: theme.color}} className='active' href='#home'>Home </a> </li>
+          <li className='new'> <a  style={{color: theme.color}} href='#new'> New</a></li>
+          <li className='about'> <a style={{color: theme.color}} href='#about'> About</a></li>
+          <li className='contact'> <a style={{color: theme.color}} href='#contact'> Contact</a></li>
         </ul>
         <form className='search-bar'>
           <input className='search' type='text' placeholder='Tìm tên phim...' name='keyword' />
