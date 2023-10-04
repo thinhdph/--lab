@@ -7,7 +7,7 @@ import Recommend from './recommend';
 export default function Main() {
   return (
     <>
-    <Recommend film={RecommendFilm}/>
+    {/* <Recommend film={RecommendFilm}/> */}
     <Content films={Filmlist}/>
      
     </>
