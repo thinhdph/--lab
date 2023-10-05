@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
 import { useParams } from 'react-router-dom'
 import { Filmlist } from "./object/Filmlist";
 export default function Detail() {  
