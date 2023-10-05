@@ -29,7 +29,7 @@ export default function Detail() {
       <div id='popup1' className="overlay">
         <div className='popup'>
         <iframe width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-          <Link to={`/detail/${film.id}`}><button>X</button></Link>
+          <Link to={`/detail/${film.id}`} className="close"><button>X</button></Link>
         </div>
       </div>
     </div>
