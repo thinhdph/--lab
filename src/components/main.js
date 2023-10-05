@@ -9,7 +9,6 @@ export default function Main() {
     <>
     {/* <Recommend film={RecommendFilm}/> */}
     <Content films={Filmlist}/>
-     
     </>
     
   )

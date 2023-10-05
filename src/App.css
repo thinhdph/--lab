@@ -1,10 +1,13 @@
 /* header */
-.header {
+/* .header {
  
-  background-color: rgb(41, 54, 54);
+  background-color: rgb(59, 125, 125);
    margin-bottom: 30px;
 }
-
+nav{
+  display: flex;
+  justify-content: space-between;
+}
 .header-menu {
   display: flex;
   align-items: flex-start;
@@ -18,7 +21,7 @@
 }
 
 li {
-  color: aliceblue;
+
   height: 100%;
   width: 90px;
   justify-content: center;
@@ -27,7 +30,7 @@ li {
 }
 
 a {
-  color: aliceblue;
+
   text-decoration: none;
 }
 
@@ -37,15 +40,16 @@ a {
 }
 .logo
 {
-  max-width:100%;
+  max-width:50%;
   max-height: 100%;
+  border-radius: 90%;
+  object-fit: cover;
 }
 .search-bar {
   max-width: auto;
-  max-height: 100%;
-  display: flex;
   justify-content: center;
-}
+  border: none;
+} */
 
 /* ContentDemo */
 .card {
@@ -83,11 +87,3 @@ button:hover{
 }
 
 /* FooterDemo */
-.footer {
-  background-color: rgb(204, 204, 68);
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding: 10px;
-  margin-bottom: -100px;
-} 
