@@ -1,5 +1,7 @@
 import React from "react";
-import {Route ,Link } from 'react-router-dom'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+import { Route, Link } from 'react-router-dom'
 //  export default function Content() {
 //     // const Detail = () => alert('aa')
 //         return (
@@ -42,6 +44,9 @@ export default function Content({ films }) {
                         </div>
                     ))
                 }</div>
+            <Stack spacing={2}>           
+                <Pagination count={10} color="primary" className=""/>         
+            </Stack>
         </div>
 
     )

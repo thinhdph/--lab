@@ -1,46 +1,31 @@
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  .popup {
-    margin: 70px auto;
-    padding: 5px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-  }
-  .popup img{ width: 100%;}
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-  }
+import React, { useState } from 'react';
 
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+function App() {
+  // Define a state variable to hold the video URL
+  const [videoUrl, setVideoUrl] = useState(''); // Initialize with an empty string
+
+  // Function to update the video URL
+  const updateVideoUrl = (newUrl) => {
+    setVideoUrl(newUrl);
+  };
+
+  return (
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src={videoUrl} // Use the state variable for the src attribute
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <button onClick={() => updateVideoUrl('YOUR_VIDEO_URL')}>
+        Load Video
+      </button>
+    </div>
+  );
 }
-.popup .close:hover {color: #06D85F;}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}  
+
+export default App;
