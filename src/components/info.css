@@ -1,0 +1,6 @@
+.big-info{
+    display: flex;
+}
+.big-info h4,p{
+    text-align: center;
+}

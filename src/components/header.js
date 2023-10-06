@@ -5,7 +5,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { Link } from 'react-router-dom';
-
+import'./header.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Header() {
     const { theme, toggle, dark } = useContext(ThemeContext)
     return (
@@ -23,11 +24,11 @@ export default function Header() {
       <nav>
         <div className="nav-wrapper" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
           <ul id="nav-mobile" className="left hide-on-med-and-down">
-            <li><Link to={'/home'}>Home</Link></li>
-            <li><Link to={'/contact'}>Contact</Link></li>
-            <li><Link to={'/info'}>info</Link></li>
+            <li><Link to={'/home'} style={{color: theme.color}} >Home</Link></li>
+            <li><Link to={'/contact'} style={{color: theme.color}}>Contact</Link></li>
+            <li><Link to={'/info'} style={{color: theme.color}} >Info</Link></li>
           </ul>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative' }} className='change-mode-btn'>
             <a className='switch-mode right' href='#' onClick={toggle} 
               style={{
                 backgroundColor: theme.backgroundColor,

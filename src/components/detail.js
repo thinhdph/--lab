@@ -10,7 +10,13 @@ export default function Detail() {
     return obj.id == id;
   });
   let cost = film.cost.toLocaleString();
-  const [video, setVideo] = useState(film.src)
+  //  gan link youtube
+  const [video, setVideo] = useState(film.src);
+  
+  //tat mo popup
+   const[isPopup, setIsPopup]=useState(false);
+   const [closePopup,setClosePopup] = useState(!film.src);
+  
   return (
     <div className='container'>
       <div className='product-card'>
@@ -29,7 +35,7 @@ export default function Detail() {
       <div id='popup1' className="overlay">
         <div className='popup'>
         <iframe width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-          <Link to={`/detail/${film.id}`} className="close"><button>X</button></Link>
+          <Link to={`/detail/${film.id}`} className="close"><button onClick={()=>{setClosePopup(closePopup)}}>X</button></Link>
         </div>
       </div>
     </div>
