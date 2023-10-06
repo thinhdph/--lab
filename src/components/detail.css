@@ -1,67 +1,67 @@
-/* ContactForm.css */
+.container.detail {
+  height: 900px;
+}
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    background: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background: darkblue;
-  }
+.container.detail img {
+  display: block;
+  height: unset;
+  max-width: 938.25px;
+  aspect-ratio: 938.25/600;
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  .popup {
-    margin: 70px auto;
-    padding: 5px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-  }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .popup .close:hover {color: #06D85F;}
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  
+.container.detail .MuiTypography-h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.card-detail {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container.detail .MuiTypography-body2 {
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}

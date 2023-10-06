@@ -1,0 +1,35 @@
+.container.content {
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card-content__title {
+    max-width: 217.087px;
+    min-height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content__action a {
+    display: block;
+    width: 100%;
+}
+
+.content-tilte h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.content-pagination nav {
+    display: flex;
+    justify-content: center;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.content-separation {
+    margin: unset !important;
+}

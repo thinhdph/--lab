@@ -86,4 +86,7 @@ button:hover{
   max-height: 600px;
 }
 
+body{
+  background-color: aquamarine !important;
+}
 /* FooterDemo */

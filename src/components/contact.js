@@ -1,29 +1,51 @@
-import React from 'react'
+import React from 'react';
+import './contact.css';
+import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
+
 
 export default function Contact() {
-    return (
-        <form >
-            <input
-                type="text"
-                placeholder="Name"
-                // value={name}
-                // onChange={(e) => setName(e.target.value)}
-            />
 
-            <input
-                type="email"
-                placeholder="Email"
-                // value={email}
-                // onChange={(e) => setEmail(e.target.value)}
-            />
 
-            <textarea
-                placeholder="Message"
-                // value={message}
-                // onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
+  return (
+    <div className="App"> 
+      <Typography gutterBottom variant="h3" align="center">
+        Web xem phim của Thịnh
+       </Typography>
+      <Grid>
+        <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5">
+              Contact Us
+          </Typography> 
+            <Typography variant="body2" color="textSecondary" component="p" gutterBottom>
+              Fill up the form and our team will get back to you within 24 hours.
+          </Typography> 
+            <form>
+              <Grid container spacing={1}>
+                <Grid xs={12} sm={6} item>
+                  <TextField placeholder="Enter first name" label="First Name" variant="outlined" fullWidth required />
+                </Grid>
+                <Grid xs={12} sm={6} item>
+                  <TextField placeholder="Enter last name" label="Last Name" variant="outlined" fullWidth required />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField type="email" placeholder="Enter email" label="Email" variant="outlined" fullWidth required />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField type="number" placeholder="Enter phone number" label="Phone" variant="outlined" fullWidth required />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField label="Message" multiline rows={4} placeholder="Type your message here" variant="outlined" fullWidth required />
+                </Grid>
+                <Grid item xs={12}>
+                  <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
+                </Grid>
 
-            <button type="submit">Send</button>
-        </form>
-    );
+              </Grid>
+            </form>
+          </CardContent>
+        </Card>
+      </Grid>
+    </div>
+  );
 }
