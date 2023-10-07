@@ -33,7 +33,7 @@ export default function Content({ films }) {
     return (
         <div className="content">
             <div className="content-tilte">
-                <h1>Phim Đang Chiếu</h1>
+                <h1 style={{color: `white`}}>Phim Đang Chiếu</h1>
             </div>
             <div className="container content">
                 {films.map((film) => (
@@ -47,7 +47,7 @@ export default function Content({ films }) {
                                 Year: {film.year}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Nation: {film.nation}
+                                Cost: {film.cost}$
                             </Typography>
                         </CardContent>
                         <CardActions className="card-content__action">

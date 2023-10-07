@@ -47,6 +47,8 @@
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  max-width: auto;
+  max-height: auto;
 }
 .popup .close {
   position: absolute;

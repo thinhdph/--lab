@@ -24,9 +24,9 @@ export default function Header() {
       <nav>
         <div className="nav-wrapper" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
           <ul id="nav-mobile" className="left hide-on-med-and-down">
-            <li><Link to={'/home'} style={{color: theme.color}} >Home</Link></li>
-            <li><Link to={'/contact'} style={{color: theme.color}}>Contact</Link></li>
-            <li><Link to={'/info'} style={{color: theme.color}} >Info</Link></li>
+            <li><Link to={'/home'} style={{color: theme.color, textDecoration:`none`}} >Home</Link></li>
+            <li><Link to={'/contact'} style={{color: theme.color,textDecoration:`none`}}>Contact</Link></li>
+            <li><Link to={'/info'} style={{color: theme.color,textDecoration:`none`}} >Info</Link></li>
           </ul>
           <div style={{ position: 'relative' }} className='change-mode-btn'>
             <a className='switch-mode right' href='#' onClick={toggle} 

@@ -63,7 +63,7 @@ export default function Detail() {
                 <div id="popup1" className="overlay">
                     <div className="popup">
                         <iframe
-                            width="560"
+                            width="450"
                             height="315"
                             src={video}
                             title="YouTube video player"

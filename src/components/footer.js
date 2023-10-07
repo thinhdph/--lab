@@ -4,7 +4,7 @@ import './footer.css'
 export  default class Footer extends Component{
     render() {
         return (
-          <div className='footer'>Copy right @ 2022</div>
+          <div className='footer'>Copy right @ 2023</div>
         )
         }
 }

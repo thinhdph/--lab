@@ -87,6 +87,8 @@ button:hover{
 }
 
 body{
-  background-color: aquamarine !important;
+  /* background-color: aquamarine !important; */
+  background-image: url('../public/image/blue-aesthetic-moon-df8850p673zj275y.jpg');
+  background-size: cover;
 }
 /* FooterDemo */
