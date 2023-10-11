@@ -16,7 +16,6 @@ export default function Detail() {
     const film = Filmlist.find((obj) => {
         return obj.id == id;
     });
-    let cost = film.cost.toLocaleString();
     //  gan link youtube
     const [video, setVideo] = useState(film.src);
 
@@ -63,7 +62,7 @@ export default function Detail() {
                 <div id="popup1" className="overlay">
                     <div className="popup">
                         <iframe
-                            width="450"
+                            width="448"
                             height="315"
                             src={video}
                             title="YouTube video player"

@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <div className="App"> 
-      <Typography gutterBottom variant="h3" align="center" color='initial'>
+      <Typography gutterBottom variant="h3" align="center" color='secondary'>
         Web xem phim của Thịnh
        </Typography>
       <Grid>

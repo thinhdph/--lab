@@ -1,35 +1,60 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 
-const ItemsPerPage = 5; // Số lượng mục trên mỗi trang
+class PaginationComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 1,
+      itemsPerPage: 10,
+      data: [], // Store your data here
+    };
+  }
 
-function PaginationApp({ data }) {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const indexOfLastItem = currentPage * ItemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - ItemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Xử lý sự kiện chuyển trang
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
+  // Fetch paginated data based on the current page and items per page
+  fetchData = () => {
+    // Implement your data fetching logic here
+    // Example: Fetch data from an API using Axios or fetch()
   };
 
-  return (
-    <div>
-      {currentItems.map((item) => (
-        <div key={item.id}>{item.name}</div>
-      ))}
+  componentDidMount() {
+    this.fetchData();
+  }
 
-      {/* Hiển thị nút phân trang */}
+  handleNextPage = () => {
+    this.setState(
+      (prevState) => ({ currentPage: prevState.currentPage + 1 }),
+      () => this.fetchData()
+    );
+  };
+
+  handlePrevPage = () => {
+    this.setState(
+      (prevState) => ({ currentPage: prevState.currentPage - 1 }),
+      () => this.fetchData()
+    );
+  };
+
+  render() {
+    const { data, currentPage, itemsPerPage } = this.state;
+
+    return (
       <div>
-        {data.map((item, index) => (
-          <button key={index} onClick={() => paginate(index + 1)}>
-            {index + 1}
-          </button>
-        ))}
+        {/* Render your data here */}
+        <ul>
+          {data.map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
+
+        {/* Pagination controls */}
+        <button onClick={this.handlePrevPage} disabled={currentPage === 1}>
+          Previous
+        </button>
+        <span>Page {currentPage}</span>
+        <button onClick={this.handleNextPage}>Next</button>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default PaginationApp;
+export default PaginationComponent;

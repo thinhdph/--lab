@@ -59,8 +59,8 @@ export default function Content({ films }) {
                 ))}
             </div>
             <hr className="content-separation" />
-            <Stack spacing={2} className="content-pagination">
-                <Pagination count={10} color="primary" className="" />
+            <Stack spacing={2} className="content-pagination " >
+                <Pagination count={10}  color="primary" className="" />
             </Stack>
         </div>
     );

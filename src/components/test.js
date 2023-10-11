@@ -14,24 +14,26 @@ export default function Test () {
             header.style.borderWidth=`3px`;
             header.style.borderColor = `black`;
             header.style.padding = '2rem';
+            header.style.color=``;
+            header.style.backgroundColor=`${theme.backgroundColor}`;
         } );
         const headerSpans = document.querySelectorAll( '.about-container .collapsible-header span' );
         headerSpans.forEach( span => {
-            span.style = `color: black; font-weight: 600`;
+            span.style = `color:${theme.color}; font-weight: 600`;
         } );
         const headerIcons = document.querySelectorAll( '.about-container .collapsible-header .material-icons' );
         headerIcons.forEach( icon => {
-            icon.style = `color: black`;
+            icon.style = `color: ${theme.color}`;
         } );
         const bodys = document.querySelectorAll( '.about-container .collapsible-body' );
         bodys.forEach( body => {
-            body.style = `color: black ; font-weight: 500; border-bottom: 1px solid white; background-color:rgb(197, 203, 120)`;
+            body.style = `color: black ; font-weight: 500; border-bottom: 2px solid ${theme.color}; background-color:yellow`;
         } );
 
     }, [theme] );
     return (
-        <div className='row about-container' style={{ position: 'relative', margin: '0', height: '100vh', background:'rgb(141, 176, 207)' }}>
-            <h3 style={{textAlign:`center`, margin:`30px 0 0 0`, color:'black'}}>About US</h3>
+        <div className='row about-container' style={{ position: 'relative', margin: '0', height: '100vh',  }}>
+            <h3 style={{textAlign:`center`, margin:`30px 0 0 0`, color:'white '}}>About US</h3>
             <div className='col s10 m10' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', margin: '0',border:' 2px solid gray',boxShadow:'inherit' }}>
                 <Collapsible accordion>
                     <CollapsibleItem
@@ -56,7 +58,7 @@ export default function Test () {
                         icon={<Icon>whatshot</Icon>}
                         node="div"
                     >
-                        You know, FYI, you can buy a paddle. Did you not plan for this contingency?
+                        You know, FYI, this website usr for learning
                     </CollapsibleItem>
                 </Collapsible>
             </div>
