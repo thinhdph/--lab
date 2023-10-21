@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Collapsible, CollapsibleItem, Icon } from 'react-materialize';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
-import './test.css';
+import './css/test.css';
 
 export default function Test () {
     const { theme } = useContext( ThemeContext );

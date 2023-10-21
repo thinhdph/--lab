@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.css';
+import './css/contact.css';
 import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
 
 

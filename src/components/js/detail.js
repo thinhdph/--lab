@@ -1,5 +1,5 @@
 import React from 'react';
-import './detail.css';
+import './css/detail.css';
 import { useParams } from 'react-router-dom';
 import { Filmlist } from './object/Filmlist';
 import { useState } from 'react';

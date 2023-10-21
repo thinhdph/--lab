@@ -1,5 +1,5 @@
 import React from "react";
-import "./recommend.css"
+import "./css/recommend.css"
 
 export default function Recommend({ film }) {
     return (

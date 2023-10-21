@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActions } from '@mui/material';
-import './content.css';
+import './css/content.css';
 //  export default function Content() {
 //     // const Detail = () => alert('aa')
 //         return (

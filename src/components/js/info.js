@@ -1,5 +1,5 @@
 import React from 'react'
-import './info.css'
+import './css/info.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css'
 
